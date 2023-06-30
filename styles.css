@@ -1,0 +1,405 @@
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Chivo+Mono&family=Oswald&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #171717;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffff;
+}
+
+.logo-header {
+    background-color: #1071FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 5%;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.logo-header span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    color: black;
+}
+
+nav {
+    width: 30%;
+    margin-left: 30%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    cursor: pointer;
+    transition: .4s;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+a:hover {
+    color: #1071FF;
+}
+
+.main-container {
+    background-color: #171717;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 6.5rem;
+    padding-bottom: 5rem;
+}
+
+.social-media {
+    width: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    font-size: 30px;
+    background-color: #262626;
+    color: #fff;
+    border-top-right-radius: 5px;
+    padding: 10px;
+}
+
+.social-media i {
+    transition: .2s;
+    cursor: pointer;
+}
+
+.social-media i:hover {
+    transform: scale(1.15)
+}
+
+.introduction-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.introduction-1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #D4D4D4;
+}
+
+.introduction-2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.introduction-style-2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 60px;
+    color: #1071FF;
+    font-weight: 700;
+}
+
+.introduction-3 {
+    color: #D4D4D4;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-weight: 700;;
+}
+
+.introduction-style-3 {
+    color: #1071FF;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-weight: 700;;
+}
+
+.img-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.img-main {
+    width: 22rem;
+    height: 30rem;
+}
+
+.skills-container {
+    width: 100%;
+    height: 95vh;
+    background-color: #262626;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.skills-titulo {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 48px;
+}
+
+.skills-introduction {
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+}
+
+.skills-box {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.skills {
+    background-color: #1071FF;
+    color: #000;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+
+}
+
+.projects-titulo {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 48px;
+    color: #ffff;
+    margin-top: 80px;
+    margin-bottom: 52px;
+    
+}
+
+.projects-introduction {
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.projects {
+    background-color: #00C566;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 8px;
+    transition: .3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.projects:hover {
+    transform: scale(1.05)
+}
+
+.projects-description {
+    width: 100%;
+    height: 30%;
+    background-color:#1071FF;
+    border-bottom-left-radius : 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.projects-name {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.projects-web {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+}
+
+.contact-container {
+    background-color: #262626;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.contact-titulo {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 48px;
+    color: #fff;
+    margin-top: 70px;
+}
+
+.contact-box {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    color: #ffff;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.contact-box label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.contact-information {
+    width: 490px;
+    height: 47.6px;
+    background-color: #262626;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.contact-information-textarea {
+   background-color: #262626;
+   color: #fff;
+   padding: 15px;
+   min-width: 490px;
+   max-width: 490px;
+   min-height: 108px;
+   height: 108px;
+   border-radius: 5px;
+   border: solid 1px #fff;
+   font-size: 16px;
+}
+
+.contact-box button {
+    width: 137px;
+    height: 53px;
+    background-color: #1071FF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.contact-box button:hover {
+    background-color: #262626;
+    color: #1071FF;
+    border: solid 1px #1071FF;
+}
+
+.footer-container {
+    height: 238px;
+    background-color: #171717;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.footer-follow {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 36px;
+}
+.footer-social-media {
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer-social-media i {
+    font-size: 30px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.footer-social-media i:hover {
+    color: #1071FF;
+}
+
+.footer-copy {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    margin-top: 25px;
+}
