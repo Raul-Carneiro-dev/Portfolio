@@ -15,7 +15,7 @@ html {
     box-sizing: border-box;
     width: 100%;
     height: 70px;
-    padding: 1rem;
+    padding: 3rem;
     padding-left: 9rem;
     padding-right: 9rem;
     position: fixed;
@@ -42,6 +42,7 @@ html {
     height: 50px;
     font-size: 19px;
     font-weight: 800;
+    margin-left: 1rem;
 }
 
 .logo-header span {
@@ -410,13 +411,12 @@ a:hover {
     #header {
         height: 70px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding-right: .9rem;
     }
 
     .logo-header {
-        margin-left: 1rem;
+        position: absolute;
     }
     
     #menu {
@@ -449,6 +449,7 @@ a:hover {
     #btn-mobile {
         display: flex;
         padding: .5rem 1rem;
+        margin-left: 25rem;
         font-size: 1rem;
         border: none;
         background: none;
