@@ -72,7 +72,6 @@ html {
 
 .main-container {
     background-color: #171717;
-    width:;
     height: 100vh;
     display: flex;
     justify-content: flex-start;
@@ -244,7 +243,7 @@ html {
 }
 
 .projects {
-    background-color: #00C566;
+    background-color: #000000;
     width: 20rem;
     height: 25rem;
     border-radius: 8px;
@@ -254,10 +253,17 @@ html {
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 30px;
+    color: #000000;
 }
 
 .projects:hover {
     transform: scale(1.05)
+}
+
+.project-logo {
+    height: 18rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .projects-description {
