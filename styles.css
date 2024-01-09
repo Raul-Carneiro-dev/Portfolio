@@ -172,7 +172,7 @@ html {
     width: 40%;
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    align-items: center;
 }
 
 .skills-titulo {
