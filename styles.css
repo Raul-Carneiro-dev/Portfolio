@@ -91,6 +91,9 @@ html {
     color: #fff;
     border-top-right-radius: 5px;
     padding: 10px;
+    z-index: 1000;
+    transform: translateX(-3.5rem);
+    opacity: 0;
 }
 
 .social-media a {
@@ -110,6 +113,9 @@ html {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    transform: translateY(-700px);
+    opacity: 0;
+
 }
 
 .introduction-1 {
@@ -156,6 +162,8 @@ html {
 .img-main {
     width: 22rem;
     height: 30rem;
+    transform: translateX(300px);
+    opacity: 0;
 }
 
 .skills-container {
@@ -241,10 +249,20 @@ html {
     margin-bottom: 60px;
 }
 
+.projects-content a {
+    width: 15rem;
+    height: 20rem;
+    transition: .2s;
+}
+
+/* .projects-content a:hover {
+    transform: scale(1.05);
+} */
+
 .projects {
     background-color: #000000;
-    width: 20rem;
-    height: 25rem;
+    width: 17rem;
+    height: 22rem;
     border-radius: 8px;
     transition: .3s;
     cursor: pointer;
@@ -257,11 +275,13 @@ html {
 }
 
 .projects:hover {
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 
+
+
 .project-logo {
-    height: 18rem;
+    height: 15rem;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -281,12 +301,14 @@ html {
 
 .projects-name {
     font-family: "Barlow Condensed", sans-serif;
+    color: #000;
     font-size: 24px;
     font-weight: 700;
 }
 
 .projects-web {
     font-family: Raleway, sans-serif;
+    color: #000;
     font-size: 16px;
 }
 

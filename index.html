@@ -16,7 +16,7 @@
             </button>
             <ul id="menu">
                 <li><a href="#main-area">HOME</a></li>
-                <li><a href="#skills-area">SOBRE</a></li>
+                <li><a href="#skills-area">SKILLS</a></li>
                 <li><a href="#projects-area">PROJETOS</a></li>
                 <li><a href="#contact-area">CONTATO</a></li>
             </ul>
@@ -51,17 +51,17 @@
                 Aqui estão algumas habilidades e tecnologias com as quais</br>
                 tenho estudado e criado meus projetos:</span>
             <div class="skills-box">
-                <div class="skills">HTML & CSS</div>
-                <div class="skills">JavaScript</div>
-                <div class="skills">TypeScript</div>
-                <div class="skills">NodeJS</div>
-                <div class="skills">React.js</div>
-                <div class="skills">React Hooks</div>
-                <div class="skills">Styled-Components</div>
-                <div class="skills">Context API</div>
-                <div class="skills">Axios</div>
-                <div class="skills">MariaDB(SQL)</div>
-                <div class="skills">Git & GitHub</div>
+                <div class="skills skill1">HTML & CSS</div>
+                <div class="skills skill2">JavaScript</div>
+                <div class="skills skill3">TypeScript</div>
+                <div class="skills skill4">NodeJS</div>
+                <div class="skills skill5">React.js</div>
+                <div class="skills skill6">React Hooks</div>
+                <div class="skills skill7">Styled-Components</div>
+                <div class="skills skill8">Context API</div>
+                <div class="skills skill9">Axios</div>
+                <div class="skills skill10">MariaDB(SQL)</div>
+                <div class="skills skill11">Git & GitHub</div>
             </div>
         </div>
     </div>
@@ -70,42 +70,50 @@
         <span class="projects-titulo">PROJETOS</span>
         <span class="projects-introduction">Aqui estão alguns projetos pessoais que eu desenvolvi.</span>
         <div class="projects-content">
-            <a href="https://primeiro-projeto-pratico-react.vercel.app/" target="_blank">
-                <div class="projects">
-                    <img class="project-logo" src="./assets/Wild-Rift-1.webp" alt="wildrift-logo"/>
-                    <div class="projects-description">
-                        <span class="projects-name">WILD RIFT</span>
-                        <span class="projects-web">Web</span>
+            <div class="card project-1">
+                <a href="https://primeiro-projeto-pratico-react.vercel.app/" target="_blank">
+                    <div class="projects">
+                        <img class="project-logo" src="./assets/Wild-Rift-1.webp" alt="wildrift-logo"/>
+                        <div class="projects-description">
+                            <span class="projects-name">WILD RIFT</span>
+                            <span class="projects-web">Web</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="https://you-tube-project-eta.vercel.app/" target="_blank">
-                <div class="projects">
-                    <img class="project-logo" src="./assets/youtube.png" alt="wildrift-logo"/>
-                    <div class="projects-description">
-                        <span class="projects-name">Projeto YouTube</span>
-                        <span class="projects-web">Web</span>
+                </a>
+            </div>
+            <div class="card project-2">
+                <a href="https://you-tube-project-eta.vercel.app/" target="_blank">
+                    <div class="projects">
+                        <img class="project-logo" src="./assets/youtube.png" alt="wildrift-logo"/>
+                        <div class="projects-description">
+                            <span class="projects-name">Projeto YouTube</span>
+                            <span class="projects-web">Web</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="https://starwars-raulcarneirodev.netlify.app/" target="_blank">
-                <div class="projects">
-                    <img class="project-logo" src="./assets/Star-wars-logo-new-tall.webp" alt="wildrift-logo"/>
-                    <div class="projects-description">
-                        <span class="projects-name">STARWARS</span>
-                        <span class="projects-web">Web</span>
+                </a>
+            </div>
+            <div class="card project-3">
+                <a href="https://starwars-raulcarneirodev.netlify.app/" target="_blank">
+                    <div class="projects">
+                        <img class="project-logo" src="./assets/Star-wars-logo-new-tall.webp" alt="wildrift-logo"/>
+                        <div class="projects-description">
+                            <span class="projects-name">STARWARS</span>
+                            <span class="projects-web">Web</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="/">
-                <div class="projects">
-                    <img class="project-logo" src="./assets/cartoon.png" alt="wildrift-logo"/>
-                    <div class="projects-description">
-                        <span class="projects-name">PORTFOLIO</span>
-                        <span class="projects-web">Web</span>
+                </a>
+            </div>
+            <div class="card project-4">
+                <a href="/">
+                    <div class="projects">
+                        <img class="project-logo" src="./assets/cartoon.png" alt="wildrift-logo"/>
+                        <div class="projects-description">
+                            <span class="projects-name">PORTFOLIO</span>
+                            <span class="projects-web">Web</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -151,11 +159,204 @@
         </div>
     </div>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+        const introductionContent = document.querySelector('.introduction-content');
+        const imgMain = document.querySelector('.img-main');
+        const socialMedia = document.querySelector('.social-media');
 
-    
-    
-    
+        const projectContent = document.querySelector('.projects-content');
+        const projectsContainer = document.querySelector('.projects-container');
+        const projectsOne = document.querySelector('.project-1');
+        const projectsSecond = document.querySelector('.project-2');
+        const projectsThird = document.querySelector('.project-3');
+        const projectsFourth = document.querySelector('.project-4');
+
+        const skillsContainer = document.querySelector('.skills-container');
+        const skillsBox = document.querySelector('.skills-box');
+        const skill1 = document.querySelector('.skill1');
+        const skill2 = document.querySelector('.skill2');
+        const skill3 = document.querySelector('.skill3');
+        const skill4 = document.querySelector('.skill4');
+        const skill5 = document.querySelector('.skill5');
+        const skill6 = document.querySelector('.skill6');
+        const skill7 = document.querySelector('.skill7');
+        const skill8 = document.querySelector('.skill8');
+        const skill9 = document.querySelector('.skill9');
+        const skill10 = document.querySelector('.skill10');
+        const skill11 = document.querySelector('.skill11');
+
+        gsap.to(introductionContent, {
+            y: 0,
+            opacity: 1,
+            duration: 1
+        })
+
+        gsap.to(imgMain, {
+            x: 0,
+            opacity: 1,
+            duration: 1
+        })
+
+        gsap.to(socialMedia, {
+            x: 0,
+            opacity: 1,
+            duration: 1
+        })
+        //
+
+        gsap.context(() => {
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: skillsContainer,
+                    start: "top 330px",
+                    end: "bottom 700px",
+                    scrub: true,
+                }
+            })
+            .fromTo(skill1, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill2, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill3, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill4, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill5, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill6, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill7, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill7, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill8, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill9, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill10, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill11, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+        },skillsBox)
+
+        gsap.context(() => {
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: projectsContainer,
+                    start: "top 400px",
+                    end: "bottom 700px",
+                    scrub: true,
+                }
+            })
+            .fromTo(projectsOne, {
+                opacity: 0,
+                y: 160,
+            }, {
+                opacity: 1,
+                y: 0
+            })
+
+            .fromTo(projectsSecond, {
+                opacity: 0,
+                y: 160,
+            }, {
+                opacity: 1,
+                y: 0
+            })
+
+            .fromTo(projectsThird, {
+                opacity: 0,
+                y: 160,
+            }, {
+                opacity: 1,
+                y: 0
+            })
+
+            .fromTo(projectsFourth, {
+                opacity: 0,
+                y: 160,
+            }, {
+                opacity: 1,
+                y: 0
+            })
+        },projectContent)
+
+        
+    </script>
+
     <script src="https://kit.fontawesome.com/e5a6f8d814.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
