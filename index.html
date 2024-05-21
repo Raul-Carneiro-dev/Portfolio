@@ -155,7 +155,7 @@
                 <a href="https://www.linkedin.com/in/raul-carneiro-candido" target="blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Raul-Carneiro-dev" target="blank"><i class="fa-brands fa-github"></i></a>
             </div>
-            <span class="footer-copy">&copy; 2024 | Portfólio por Raul Carneiro Candido</span>
+            <span class="footer-copy">&copy; <span id="newYear"></span> | Portfólio por Raul Carneiro Candido</span>
         </div>
     </div>
 
@@ -186,6 +186,9 @@
         const skill9 = document.querySelector('.skill9');
         const skill10 = document.querySelector('.skill10');
         const skill11 = document.querySelector('.skill11');
+        
+        const today = new Date()
+        document.querySelector("#newYear").innerHTML = today.getFullYear()
 
         gsap.to(introductionContent, {
             y: 0,
