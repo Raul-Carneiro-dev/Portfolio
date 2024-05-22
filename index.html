@@ -114,6 +114,17 @@
                     </div>
                 </a>
             </div>
+            <div class="card project-5">
+                <a href="https://grouplock.netlify.app/" target="_blank">
+                    <div class="projects">
+                        <img class="project-logo" src="./assets/icon-logo4.png" alt="wildrift-logo"/>
+                        <div class="projects-description">
+                            <span class="projects-name">GroupLock</span>
+                            <span class="projects-web">Web</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -172,6 +183,7 @@
         const projectsSecond = document.querySelector('.project-2');
         const projectsThird = document.querySelector('.project-3');
         const projectsFourth = document.querySelector('.project-4');
+        const projectsFiveth = document.querySelector('.project-5');
 
         const skillsContainer = document.querySelector('.skills-container');
         const skillsBox = document.querySelector('.skills-box');
@@ -319,8 +331,8 @@
             gsap.timeline({
                 scrollTrigger: {
                     trigger: projectsContainer,
-                    start: "top 400px",
-                    end: "bottom 700px",
+                    start: "top 590px",
+                    end: "bottom 900px",
                     scrub: true,
                 }
             })
@@ -354,6 +366,13 @@
             }, {
                 opacity: 1,
                 y: 0
+            })
+            .fromTo(projectsFiveth, {
+                opacity: 0,
+                y: 160,
+            }, {
+                opacity: 1,
+                y: 0 
             })
         },projectContent)
 
