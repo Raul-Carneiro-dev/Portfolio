@@ -442,6 +442,17 @@ html {
     margin-top: 25px;
 }
 
+@media(max-width: 1215px) {
+    .projects-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 920px) {
+    .projects-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media(max-width: 768px) {
 
@@ -603,8 +614,8 @@ html {
     }
     
     .projects-content {
+        grid-template-columns: repeat(1, 1fr);
         margin-bottom: 3rem;
-
     }
 
     .projects-titulo {
