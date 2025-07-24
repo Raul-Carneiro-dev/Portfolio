@@ -62,6 +62,8 @@
                 <div class="skills skill9">Axios</div>
                 <div class="skills skill10">MariaDB(SQL)</div>
                 <div class="skills skill11">Git & GitHub</div>
+                <div class="skills skill12">Prisma</div>
+                <div class="skills skill13">Docker</div>
             </div>
         </div>
     </div>
@@ -71,60 +73,35 @@
         <span class="projects-introduction">Aqui estão alguns projetos pessoais que eu desenvolvi.</span>
         <div class="projects-content">
             <div class="card project-1">
-                <a href="https://primeiro-projeto-pratico-react.vercel.app/" target="_blank">
+                <a href="https://gamesss.com.br/" target="_blank">
                     <div class="projects">
-                        <img class="project-logo" src="./assets/Wild-Rift-1.webp" alt="wildrift-logo"/>
+                        <img class="project-logo" src="./assets/Logo Gamesss.png" alt="wildrift-logo"/>
                         <div class="projects-description">
-                            <span class="projects-name">WILD RIFT</span>
-                            <span class="projects-web">Web</span>
+                            <span class="projects-name">Gamesss</span>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="card project-2">
-                <a href="https://you-tube-project-eta.vercel.app/" target="_blank">
-                    <div class="projects">
-                        <img class="project-logo" src="./assets/youtube.png" alt="wildrift-logo"/>
-                        <div class="projects-description">
-                            <span class="projects-name">Projeto YouTube</span>
-                            <span class="projects-web">Web</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card project-3">
-                <a href="https://starwars-raulcarneirodev.netlify.app/" target="_blank">
-                    <div class="projects">
-                        <img class="project-logo" src="./assets/Star-wars-logo-new-tall.webp" alt="wildrift-logo"/>
-                        <div class="projects-description">
-                            <span class="projects-name">STARWARS</span>
-                            <span class="projects-web">Web</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card project-4">
-                <a href="/">
-                    <div class="projects">
-                        <img class="project-logo" src="./assets/cartoon.png" alt="wildrift-logo"/>
-                        <div class="projects-description">
-                            <span class="projects-name">PORTFOLIO</span>
-                            <span class="projects-web">Web</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card project-5">
                 <a href="https://grouplock.netlify.app/" target="_blank">
                     <div class="projects">
                         <img class="project-logo" src="./assets/icon-logo4.png" alt="wildrift-logo"/>
                         <div class="projects-description">
                             <span class="projects-name">GroupLock</span>
-                            <span class="projects-web">Web</span>
                         </div>
                     </div>
                 </a>
             </div>
+            <div class="card project-3">
+                <a href="https://you-tube-project-eta.vercel.app/" target="_blank">
+                    <div class="projects">
+                        <img class="project-logo" src="./assets/youtube.png" alt="wildrift-logo"/>
+                        <div class="projects-description">
+                            <span class="projects-name">YouTube (Search)</span>
+                        </div>
+                    </div>
+                </a>
+            </div>            
         </div>
     </div>
 
@@ -152,7 +129,6 @@
                     Mensagem
                     <textarea class="contact-information-textarea" name="message"></textarea>
                   </label>
-                    <!-- your other form fields go here -->
                   <button type="submit">Enviar</button>
                 </form>
             </div>
@@ -182,8 +158,6 @@
         const projectsOne = document.querySelector('.project-1');
         const projectsSecond = document.querySelector('.project-2');
         const projectsThird = document.querySelector('.project-3');
-        const projectsFourth = document.querySelector('.project-4');
-        const projectsFiveth = document.querySelector('.project-5');
 
         const skillsContainer = document.querySelector('.skills-container');
         const skillsBox = document.querySelector('.skills-box');
@@ -198,6 +172,8 @@
         const skill9 = document.querySelector('.skill9');
         const skill10 = document.querySelector('.skill10');
         const skill11 = document.querySelector('.skill11');
+        const skill12 = document.querySelector('.skill12');
+        const skill13 = document.querySelector('.skill13');
         
         const today = new Date()
         document.querySelector("#newYear").innerHTML = today.getFullYear()
@@ -225,8 +201,8 @@
             gsap.timeline({
                 scrollTrigger: {
                     trigger: skillsContainer,
-                    start: "top 330px",
-                    end: "bottom 700px",
+                    start: "top 800px",
+                    end: "bottom 900px",
                     scrub: true,
                 }
             })
@@ -325,6 +301,22 @@
                 opacity: 1,
                 x: 0
             })
+
+            .fromTo(skill12, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
+
+            .fromTo(skill13, {
+                opacity: 0,
+                x: 160,
+            }, {
+                opacity: 1,
+                x: 0
+            })
         },skillsBox)
 
         gsap.context(() => {
@@ -358,21 +350,6 @@
             }, {
                 opacity: 1,
                 y: 0
-            })
-
-            .fromTo(projectsFourth, {
-                opacity: 0,
-                y: 160,
-            }, {
-                opacity: 1,
-                y: 0
-            })
-            .fromTo(projectsFiveth, {
-                opacity: 0,
-                y: 160,
-            }, {
-                opacity: 1,
-                y: 0 
             })
         },projectContent)
 
