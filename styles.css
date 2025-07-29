@@ -13,6 +13,7 @@ html {
 
 #header {
     box-sizing: border-box;
+    width: 100%;
     height: 70px;
     padding: 3rem;
     display: flex;
@@ -20,7 +21,6 @@ html {
     justify-content: space-between;
     background: #000000eb;
     position: fixed;
-    width: 100%;
     z-index: 1000;
     border-bottom: solid 4px #141414;
 }
@@ -72,6 +72,7 @@ html {
 .main-container {
     background-color: #000000;
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -223,7 +224,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
 }
 
 .projects-content {
@@ -456,6 +457,12 @@ html {
 
 @media(max-width: 768px) {
 
+    #header {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .logo-header {
         width: 55px;
         height: 55px;
@@ -467,7 +474,7 @@ html {
     
     #menu {
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
         top: 79px;
         right: 0px;
@@ -480,7 +487,7 @@ html {
     }
 
     #nav {
-        margin-right: -1rem;
+        margin-right: 2rem;
     }
     
     #nav.active #menu {
@@ -561,13 +568,14 @@ html {
     }
     
     .img-content {
+        margin-left: 0;
         margin-top: 0;
-
     }
 
     .img-main {
         width: 12rem;
         height: 17rem;
+        transform: none;
     } 
 
     .skills-container {
@@ -590,10 +598,10 @@ html {
 
     .skills-introduction {
         width: 20rem;
-        height: 2rem;
+        height: 1.5rem;
         text-align: center;
-        font-size: 20px;
-        margin-top: 1rem;
+        font-size: 15px;
+        padding: 1rem;
     }
 
     .skills-box {
@@ -601,7 +609,7 @@ html {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     .skills {
@@ -625,9 +633,7 @@ html {
     }
 
     .projects-introduction {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 30px;
+        
         text-align: center;
     }
 

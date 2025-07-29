@@ -11,7 +11,7 @@
     <header id="header">
         <div class="logo-header"><span>_RCC_</span></div>
         <nav id="nav">
-            <button id="btn-mobile">Menu
+            <button id="btn-mobile">
                 <span id="hamburger"></span>
             </button>
             <ul id="menu">
@@ -159,6 +159,7 @@
         const projectsSecond = document.querySelector('.project-2');
         const projectsThird = document.querySelector('.project-3');
 
+
         const skillsContainer = document.querySelector('.skills-container');
         const skillsBox = document.querySelector('.skills-box');
         const skill1 = document.querySelector('.skill1');
@@ -178,146 +179,181 @@
         const today = new Date()
         document.querySelector("#newYear").innerHTML = today.getFullYear()
 
-        gsap.to(introductionContent, {
-            y: 0,
-            opacity: 1,
-            duration: 1
-        })
+        const screenWidth = window.innerWidth;
 
-        gsap.to(imgMain, {
-            x: 0,
-            opacity: 1,
-            duration: 1
-        })
+        const introductionAnimation = () => {
+            if (screenWidth > 1024) {
+                gsap.to(introductionContent, {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1
+                })
+        
+                gsap.to(imgMain, {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1
+                })
+        
+                gsap.to(socialMedia, {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1
+                })
+            } else {
+                gsap.to(introductionContent, {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1
+                })
+        
+                gsap.to(imgMain, {
+                    y: 0,
+                    opacity: 1,
+                    duration: 2
+                })
+        
+                gsap.to(socialMedia, {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1
+                })
+            }
+        }
 
-        gsap.to(socialMedia, {
-            x: 0,
-            opacity: 1,
-            duration: 1
-        })
+        introductionAnimation();
+
         //
 
-        gsap.context(() => {
-            gsap.timeline({
-                scrollTrigger: {
-                    trigger: skillsContainer,
-                    start: "top 800px",
-                    end: "bottom 900px",
-                    scrub: true,
-                }
-            })
-            .fromTo(skill1, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
+        const skillsAnimation = () => {
 
-            .fromTo(skill2, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
+            if (screenWidth > 1024) {
+                gsap.context(() => {
+                    gsap.timeline({
+                        scrollTrigger: {
+                            trigger: skillsContainer,
+                            start: "top 800px",
+                            end: "bottom 900px",
+                            scrub: true,
+                        }
+                    })
+                    .fromTo(skill1, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill2, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill3, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill4, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill5, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill6, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill7, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill7, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill8, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill9, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill10, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill11, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill12, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+        
+                    .fromTo(skill13, {
+                        opacity: 0,
+                        x: 160,
+                    }, {
+                        opacity: 1,
+                        x: 0
+                    })
+                },skillsBox)
+            } 
+        }
 
-            .fromTo(skill3, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
+        skillsAnimation();
 
-            .fromTo(skill4, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
-
-            .fromTo(skill5, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
-
-            .fromTo(skill6, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
-
-            .fromTo(skill7, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
-
-            .fromTo(skill7, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
-
-            .fromTo(skill8, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
-
-            .fromTo(skill9, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
-
-            .fromTo(skill10, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
-
-            .fromTo(skill11, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
-
-            .fromTo(skill12, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
-
-            .fromTo(skill13, {
-                opacity: 0,
-                x: 160,
-            }, {
-                opacity: 1,
-                x: 0
-            })
-        },skillsBox)
 
         gsap.context(() => {
             gsap.timeline({
@@ -352,6 +388,17 @@
                 y: 0
             })
         },projectContent)
+
+        var docWidth = document.documentElement.offsetWidth;
+
+        [].forEach.call(
+        document.querySelectorAll('*'),
+        function(el) {
+            if (el.offsetWidth > docWidth) {
+            console.log(el);
+            }
+        }
+        );
 
         
     </script>
